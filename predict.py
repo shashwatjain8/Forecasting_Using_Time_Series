@@ -35,13 +35,13 @@ y = furniture['Sales'].resample('MS').mean()
 
 print y['2017':]
 
-# y.plot(figsize=(15, 6))
-# plt.show()
+y.plot(figsize=(15, 6))
+plt.show()
 
-# rcParams['figure.figsize'] = 18, 8
-# decomposition = sm.tsa.seasonal_decompose(y, model='additive')
-# fig = decomposition.plot()
-# plt.show()
+rcParams['figure.figsize'] = 18, 8
+decomposition = sm.tsa.seasonal_decompose(y, model='additive')
+fig = decomposition.plot()
+plt.show()
 
 
 #ARIMA
