@@ -69,7 +69,7 @@ for param in pdq:
             print('ARIMA{}x{}12 - AIC:{}'.format(param, param_seasonal, results.aic))
         except:
             continue
-
+# Using the ARIMA (Auto Regressive Integrated Moving Average) Model
 
 mod = sm.tsa.statespace.SARIMAX(y,
                                 order=(1, 1, 1),
