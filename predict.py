@@ -29,7 +29,7 @@ furniture['Order Date'].min(), furniture['Order Date'].max()
 cols = ['Row ID', 'Order ID', 'Ship Date', 'Ship Mode', 'Customer ID', 'Customer Name', 'Segment', 'Country', 'City', 'State', 'Postal Code', 'Region', 'Product ID', 'Category', 'Sub-Category', 'Product Name', 'Quantity', 'Discount', 'Profit']
 furniture.drop(cols, axis=1, inplace=True)
 furniture = furniture.sort_values('Order Date')
-print furniture.isnull().sum()
+#print furniture.isnull().sum()
 
 #print furniture[:3]
 
@@ -39,10 +39,10 @@ furniture = furniture['Sales'].sum().reset_index()
 #print furniture.head()
 #print furniture[:3]
 furniture = furniture.set_index('Order Date')
-print furniture.index
+#print furniture.index
 y = furniture['Sales'].resample('MS').mean()
 
-print y['2017':]
+#print y['2017':]
 
 y.plot(figsize=(15, 6))
 plt.show()
