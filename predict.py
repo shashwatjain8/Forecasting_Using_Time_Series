@@ -1,3 +1,12 @@
+# Prediction Script to predict the prices of future sales in a Superstore.
+# Uses ARIMA model for the prediction.
+# Fields in the dataset are
+# Row ID , Order ID , Order Date , Ship Date	
+# Ship Mode , Customer ID , Customer Name , Segment	
+# Country , City , State , Postal Code , Region	
+# Product ID , Category , Sub-Category	
+# Product Name , Sales , Quantity , Discount , Profit
+
 import warnings
 import itertools
 import numpy as np
